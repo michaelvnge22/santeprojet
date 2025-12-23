@@ -1,0 +1,45 @@
+# Structure du projet Santé Plus
+
+```
+.gitignore
+.python-version
+main.py
+pyproject.toml
+README.md
+requirements.txt
+uv.lock
+__pycache__/
+    main.cpython-312.pyc
+data/
+    database.json
+models/
+    __init__.py
+    food.py
+    recommendation.py
+    user.py
+    __pycache__/
+routers/
+    __init__.py
+    auth.py
+    food_log.py
+    recommendations.py
+    user.py
+    __pycache__/
+services/
+    __init__.py
+    database.py
+    nutrition.py
+    __pycache__/
+static/
+    __init__.py
+    css/
+    images/
+    js/
+templates/
+    __init__.py
+    dashboard.html
+    food_log.html
+    index.html
+    login.html
+    ...
+```# santeprojet
