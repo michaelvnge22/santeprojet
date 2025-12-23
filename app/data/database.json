@@ -1,0 +1,27 @@
+{
+  "users":[],
+
+  "recommendations": [],
+  "food_database": [
+    {
+      "food_id": "1",
+      "name": "Oatmeal",
+      "calories": 150,
+      "nutrients": {
+        "protein": 5,
+        "carbs": 27,
+        "fat": 3
+      }
+    },
+    {
+      "food_id": "2",
+      "name": "Grilled Chicken",
+      "calories": 200,
+      "nutrients": {
+        "protein": 25,
+        "carbs": 0,
+        "fat": 5
+      }
+    }
+  ]
+}

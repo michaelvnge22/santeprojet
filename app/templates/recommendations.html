@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommandations - Santé Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/recommandations.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', path='images/logo.png') }}" alt="Logo" class="logo">
+        <nav>
+            <a href="/dashboard">Tableau de bord</a>
+            <a href="/profile">Profil</a>
+            <a href="/food_log">Journal</a>
+            <a href="/recommendations">Recommandations</a>
+            <a href="/index">Déconnexion</a>
+        </nav>
+    </header>
+    <main>
+        <section class="recommendations">
+            <h2>Recommandations du jour</h2>
+            <div class="meal-card">
+                <h3>Petit-déjeuner</h3>
+                <p>Oatmeal avec fruits (150 kcal)</p>
+            </div>
+            <div class="meal-card">
+                <h3>Déjeuner</h3>
+                <p>Salade de poulet (400 kcal)</p>
+            </div>
+            <div class="meal-card">
+                <h3>Dîner</h3>
+                <p>Saumon et légumes (350 kcal)</p>
+            </div>
+            <h2>Conseils</h2>
+            <ul>
+                <li>Évitez les sucres rapides</li>
+                <li>Marchez 30 min par jour</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <h3>Réseaux Sociaux</h3>
+            <ul>
+                <li><a href="#">Twitter (@santePlus)</a></li>
+                <li><a href="#">Facebook (@santePlus)</a></li>
+                <li><a href="#">Instagram (@santePlus)</a></li>
+                <li><a href="#">LinkedIn (@santePlus)</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div style="background-color: #000000; text-align: center; padding: 10px;">
+        <small style="color: white;">COPYRIGHTS <strong>DEV5.1</strong>. TOUS DROITS RÉSERVÉS.</small>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

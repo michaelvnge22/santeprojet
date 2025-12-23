@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Santé Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/dashboard.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', path='images/logo.png') }}" alt="Logo" class="logo">
+        <nav>
+            <a href="/dashboard">Tableau de bord</a>
+            <a href="/profile">Profil</a>
+            <a href="/food_log">Journal</a>
+            <a href="/recommendations">Recommandations</a>
+            <a href="/index">Déconnexion</a>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Tableau de bord</h2>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Recommandation du jour</h3>
+                    <p>Petit-déjeuner : Oatmeal</p>
+                    <p>Déjeuner : Salade de poulet</p>
+                    <p>Dîner : Saumon et légumes</p>
+                    <a href="/recommendations" class="btn">Voir détails</a>
+                </div>
+                <div class="card">
+                    <h3>Résumé alimentaire</h3>
+                    <p>Calories : 1200/2000 kcal</p>
+                    <div class="chart">
+                        <p>Protéines : 30%</p>
+                        <p>Glucides : 50%</p>
+                        <p>Lipides : 20%</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Conseil rapide</h3>
+                    <p>Buvez 2L d'eau par jour !</p>
+                </div>
+            </div>
+            <a href="/food_log" class="btn">Ajouter un repas</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <h3>Réseaux Sociaux</h3>
+            <ul>
+                <li><a href="#">Twitter (@santePlus)</a></li>
+                <li><a href="#">Facebook (@santePlus)</a></li>
+                <li><a href="#">Instagram (@santePlus)</a></li>
+                <li><a href="#">LinkedIn (@santePlus)</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        <small>COPYRIGHTS <strong>DEV5.1</strong>. TOUS DROITS RÉSERVÉS.</small>
+    </div>
+</body>
+</html>

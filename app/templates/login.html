@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Santé Plus</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <main>
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Santé Plus" class="logo">
+        </div>
+        <section class="form-section">
+            <h2>Connexion</h2>
+            {% if message %}
+                <p style="color: red;">{{ message }}</p>
+            {% endif %}
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+            <p>Pas de compte ? <a href="/signup">Inscrivez-vous</a></p>
+        </section>
+    </main>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

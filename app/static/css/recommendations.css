@@ -1,0 +1,31 @@
+.recommendations {
+    padding: 20px;
+}
+
+.recommendations h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.meal-card {
+    background-color: #e9f7ef;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.meal-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.recommendations ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .meal-card {
+        padding: 10px;
+    }
+}

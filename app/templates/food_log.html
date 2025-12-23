@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal alimentaire - Santé Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/food_log.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', path='images/logo.png') }}" alt="Logo" class="logo">
+        <nav>
+            <a href="/dashboard">Tableau de bord</a>
+            <a href="/profile">Profil</a>
+            <a href="/food_log">Journal</a>
+            <a href="/recommendations">Recommandations</a>
+            <a href="/index">Déconnexion</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Ajouter un repas</h2>
+            <form>
+                <label for="date">Date :</label>
+                <input type="date" id="date" required>
+                <label for="meal_type">Type de repas :</label>
+                <select id="meal_type" required>
+                    <option value="">Sélectionner</option>
+                    <option value="breakfast">Petit-déjeuner</option>
+                    <option value="lunch">Déjeuner</option>
+                    <option value="dinner">Dîner</option>
+                    <option value="snack">Collation</option>
+                </select>
+                <label for="food">Aliment :</label>
+                <input type="text" id="food" placeholder="Ex. Oatmeal" required>
+                <label for="quantity">Quantité (g) :</label>
+                <input type="number" id="quantity" placeholder="100" required>
+                <button type="submit" class="btn">Ajouter</button>
+            </form>
+        </section>
+        <section class="food-log">
+            <h2>Historique</h2>
+            <div class="log-entry">
+                <p>15/05/2025 - Petit-déjeuner : Oatmeal (150 kcal)</p>
+                <button class="btn-small">Supprimer</button>
+            </div>
+        </section>
+    </main>
+    <div style="background-color: #000000; text-align: center; padding: 10px;">
+        <small style="color: white;">COPYRIGHTS <strong>DEV5.1</strong>. TOUS DROITS RÉSERVÉS.</small>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
